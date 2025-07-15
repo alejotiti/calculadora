@@ -7,6 +7,7 @@ botones.forEach(boton => {
     boton.addEventListener("click", () => {
         if (boton.id === "limpiar") {
             pantalla.value = "";
+            ecuacion = "";
         } else if (boton.id === "igual") {
             try {
                 pantalla.value = eval(ecuacion);
